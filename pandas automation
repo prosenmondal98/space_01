@@ -1,0 +1,8 @@
+cat={}
+for ram in lap['Ram'].unique():
+    ct=0
+    for i in lap['Ram']:
+        if ram==i:
+            ct+=1
+    cat[' {} Ram'.format(ram)]=ct
+print(cat)
